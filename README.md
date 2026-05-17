@@ -6,7 +6,7 @@ Pulse API provides multimodal UGC auditing for campaign compliance.
 Base URL (production):
 
 ```txt
-https://pulse-api-gateway-564367309021.us-central1.run.app
+https://pulse.drafteye.app/api
 ```
 
 Main outcome: each analysis returns `analysis.v2` with stable blocks:
@@ -31,7 +31,7 @@ For analysis creation, also send:
 Example shell setup:
 
 ```bash
-export API_URL="https://pulse-api-gateway-564367309021.us-central1.run.app"
+export API_URL="https://pulse.drafteye.app/api"
 export TENANT_ID="acme"
 export API_KEY="test-key"
 ```
@@ -238,10 +238,10 @@ Common cases:
 
 ## 7) Health and Docs
 
-- Healthcheck: `GET /healthz`
+- Healthcheck: `GET /api/healthz`
 - Interactive docs:
-  - Swagger UI: `/docs`
-  - ReDoc: `/redoc`
+  - Swagger UI: `https://pulse.drafteye.app/api/docs`
+  - ReDoc: `https://pulse.drafteye.app/api/redoc`
 
 ---
 
